@@ -1,12 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventoController;
+use App\Http\Controllers\ReservaController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/eventos', [EventoController::class, 'index']);
-Route::get('/calendario', [EventoController::class, 'mostrarCalendario']);
+Route::get('/eventos', [ReservaController::class, 'index']);
+Route::get('/', [ReservaController::class, 'mostrarCalendario']);
+Route::post('/reservar', [ReservaController::class, 'store'])->name('reservar');
 

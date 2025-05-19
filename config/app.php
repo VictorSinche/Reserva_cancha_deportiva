@@ -65,7 +65,9 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    // 'timezone' => 'UTC',
+    'timezone' => 'America/Lima',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -123,4 +125,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'locale' => 'es',
+    'fallback_locale' => 'es',
 ];

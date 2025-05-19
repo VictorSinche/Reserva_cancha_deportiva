@@ -15,6 +15,7 @@
     },
     "dependencies": {
         "@fullcalendar/core": "^6.1.17",
-        "@fullcalendar/daygrid": "^6.1.17"
+        "@fullcalendar/daygrid": "^6.1.17",
+        "flowbite": "^3.1.2"
     }
 }
